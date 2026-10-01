@@ -70,5 +70,6 @@ An electronics technician by training and self-taught in security, with roots in
 - 💼 **LinkedIn** — [manuel-sanchez-brito](https://www.linkedin.com/in/manuel-sanchez-brito/)
 - ✉️ **Email** — [nodo.automatizacion@gmail.com](mailto:nodo.automatizacion@gmail.com)
 - 🌐 **Web** — [no-do.dev](https://no-do.dev)
+- 📄 **CV** — [Download (PDF)](Manuel-Sanchez-CV.pdf)
 
 <sub>Full-stack security engineer · Murcia, Spain · CET · Remote-first</sub>
