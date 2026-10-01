@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Manuel Sánchez Brito — Full-stack Security Engineer. Cybersecurity, Cloud, Networks, Hardware. Murcia, Spain. Remote-first.">
+  <title>Manuel Sánchez Brito — Full-stack Security Engineer</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1117"/>
+      <stop offset="0.55" stop-color="#0F1626"/>
+      <stop offset="1" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4F7FB"/>
+      <stop offset="1" stop-color="#C3CEDE"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1F6FEB" stop-opacity="0.95"/>
+      <stop offset="0.7" stop-color="#1F6FEB" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#1F6FEB" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- panel (self-contained: identical on GitHub light & dark themes) -->
+  <rect width="1200" height="300" rx="10" fill="#0D1117"/>
+  <rect width="1200" height="300" rx="10" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="298" rx="9" fill="none" stroke="#8B98A9" stroke-opacity="0.16"/>
+
+  <!-- corner registration marks -->
+  <g stroke="#8B98A9" stroke-opacity="0.45" stroke-width="1">
+    <path d="M19 26H33M26 19V33"/>
+    <path d="M1167 26H1181M1174 19V33"/>
+    <path d="M19 274H33M26 267V281"/>
+    <path d="M1167 274H1181M1174 267V281"/>
+  </g>
+
+  <!-- secure-node motif (shield + mesh, blue accent) -->
+  <g transform="translate(980,66)">
+    <g stroke="#2B3A52" stroke-width="1" fill="none">
+      <path d="M60 2 108 20 108 70 60 108 12 70 12 20Z"/>
+    </g>
+    <path d="M60 10 100 24 100 68 60 98 20 68 20 24Z" fill="#111B2E" stroke="#1F6FEB" stroke-opacity="0.55" stroke-width="1.2"/>
+    <g stroke="#1F6FEB" stroke-opacity="0.9" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M42 56 55 70 80 40"/>
+    </g>
+    <g fill="#1F6FEB" fill-opacity="0.85">
+      <circle cx="60" cy="12" r="2.4"/><circle cx="100" cy="46" r="2.4"/><circle cx="60" cy="96" r="2.4"/><circle cx="20" cy="46" r="2.4"/>
+    </g>
+  </g>
+
+  <!-- text: generic sans/mono stacks render on any viewer (no external font fetch) -->
+  <text x="66" y="92" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="14" letter-spacing="3.4" fill="#5E7086">SECURITY ENGINEER</text>
+  <text x="66" y="160" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="700" letter-spacing="0.5" fill="url(#name)">Manuel Sánchez Brito</text>
+  <rect x="68" y="182" width="430" height="2" fill="url(#rule)"/>
+  <text x="66" y="214" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="20" letter-spacing="0.4" fill="#AEBAC9">Full-stack Security Engineer</text>
+  <text x="66" y="250" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="13.5" letter-spacing="2" fill="#6E7D90">CYBERSECURITY · CLOUD · NETWORKS · HARDWARE</text>
+  <text x="66" y="276" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="12.5" letter-spacing="2" fill="#4F5E72">MURCIA · SPAIN · CET · REMOTE-FIRST</text>
+</svg>
