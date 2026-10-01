@@ -39,11 +39,9 @@ An electronics technician by training and self-taught in security, with roots in
 
 ## Selected public work
 
-- **[minimeters-bridge](https://github.com/Manuel-1312/minimeters-bridge)** — Real audio metering (LUFS, spectrum, true peak, correlation) over WebSocket via WASAPI loopback. `TypeScript`
-- **[realmeters-spotify](https://github.com/Manuel-1312/realmeters-spotify)** — Mastering-style real-audio visualizer for Spotify (Spicetify custom app): LUFS, spectrum, spectrogram, true peak, stereometer. `TypeScript`
-- **[scanner-suite](https://github.com/Manuel-1312/scanner-suite)** — Multi-scanner tooling for reconnaissance and security assessment. `Python`
-- **[secure-map](https://github.com/Manuel-1312/secure-map)** — Secure cartography system. `Python`
-- **[personal-dictionary-of-ethical-hacking](https://github.com/Manuel-1312/personal-dictionary-of-ethical-hacking)** — A working reference for ethical hacking concepts and tooling. `Python`
+- **[minimeters-bridge](https://github.com/Manuel-1312/minimeters-bridge)** — Real-time audio metering engine (LUFS R128, FFT spectrum, true peak, correlation) streamed over WebSocket from WASAPI loopback. `TypeScript` · `Python`
+- **[realmeters-spotify](https://github.com/Manuel-1312/realmeters-spotify)** — Mastering-style real-audio visualizer for Spotify (Spicetify custom app): LUFS, spectrum, spectrogram, true peak, stereometer. Published on the Spicetify Marketplace. `TypeScript`
+- **[personal-dictionary-of-ethical-hacking](https://github.com/Manuel-1312/personal-dictionary-of-ethical-hacking)** — A working reference of ethical-hacking concepts and tooling, with a script launcher and CI. `Python`
 
 ## Skills
 
