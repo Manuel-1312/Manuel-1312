@@ -62,7 +62,7 @@ An electronics technician by training and self-taught in security, with roots in
 - **Electronics & Hardware Workshop** · Havana · 2016–2018 — Hands-on apprenticeship beside senior technicians: board-level repair, chip programming & hardware reverse-engineering — the origin of my firmware work.
 
 **Education** — IT Professional Training, Universidad de las Ciencias Informáticas (UCI), Havana (2021–2023) · Técnico Medio en Electrónica, Havana (2016–2019)
-**Languages** — Spanish (native) · French (upper-intermediate) · English (intermediate)
+**Languages** — Spanish (native) · French (upper-intermediate) · English (C1)
 
 ## Contact
 
