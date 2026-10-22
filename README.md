@@ -39,6 +39,7 @@ An electronics technician by training and self-taught in security, with roots in
 
 ## Selected public work
 
+- **[lazyios](https://github.com/Manuel-1312/lazyios)** — Keyboard-driven terminal app for iPhones over USB, no jailbreak: syslog, processes with live CPU/memory/network per app, packet capture with per-app connections, privacy score and tracker detection, anomaly rules. On [PyPI](https://pypi.org/project/lazyios/) plus prebuilt Windows, macOS and Linux binaries with SHA-256 checksums. `Python` · `Textual`
 - **[minimeters-bridge](https://github.com/Manuel-1312/minimeters-bridge)** — Real-time audio metering engine (LUFS R128, FFT spectrum, true peak, correlation) streamed over WebSocket from WASAPI loopback. `TypeScript` · `Python`
 - **[realmeters-spotify](https://github.com/Manuel-1312/realmeters-spotify)** — Mastering-style real-audio visualizer for Spotify (Spicetify custom app): LUFS, spectrum, spectrogram, true peak, stereometer. Published on the Spicetify Marketplace. `TypeScript`
 - **[personal-dictionary-of-ethical-hacking](https://github.com/Manuel-1312/personal-dictionary-of-ethical-hacking)** — A working reference of ethical-hacking concepts and tooling, with a script launcher and CI. `Python`
