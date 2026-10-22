@@ -22,7 +22,7 @@
 
 I'm a full-stack security engineer who builds security products end to end — from hardware and networks to the cloud that runs them.
 
-I designed, shipped and now **operate two products in production**: **GRIMZ**, a self-hosted penetration-testing platform with live billing and a deny-by-default scope engine, and **TRACEZ**, an OSINT intelligence SaaS on the Cloudflare edge with tamper-evident, Ed25519-signed evidence. Alongside them I architect **DEEPWIRE**, a recon platform with private, controlled egress.
+I designed, shipped and now **operate two products in production**: **GRIMZ**, a self-hosted penetration-testing platform with live billing and a deny-by-default scope engine, and **TRACEZ**, an OSINT intelligence SaaS on the Cloudflare edge with tamper-evident, Ed25519-signed evidence. I also architected **DEEPWIRE**, a recon platform with private, controlled egress (retired in October 2026).
 
 Day to day I move across the whole stack: Python scanning engines, strict-TypeScript Cloudflare Workers, Docker-based monitoring (Prometheus / Grafana), DNS filtering, mesh networking, honeypots, and live incident response — including real malware analysis and OSINT attribution after an intrusion.
 
@@ -34,7 +34,7 @@ An electronics technician by training and self-taught in security, with roots in
 |---|---|---|
 | **GRIMZ** — Commercial pentesting platform *(Founder & Lead Engineer)* | Self-hosted pentest product, shipped end to end: license issuer, store, gated downloads and live Stripe billing. Deny-by-default scope engine + kill-switch, PTY-backed terminal, per-target rate limiting, isolated Metasploit lab. | Python · Flask · Stripe |
 | **TRACEZ** — OSINT intelligence SaaS *(Founder & Lead Engineer)* | Production OSINT & graph-intelligence on the Cloudflare edge (Workers, D1, R2, KV, WAF): Google SSO, 2FA, entity merge, Stripe billing. Tamper-evident Ed25519-signed evidence + public verification, AI-assisted entity expansion with human-in-the-loop. Shipped lean: mobile Lighthouse 99, CLS 0 in production. | TypeScript · Cloudflare Workers · D1 · R2 |
-| **DEEPWIRE** — Recon & attack-surface platform *(Architect)* | Standalone recon engine; security-audited (scope-bypass, CSRF, session revocation, rate-limit); private egress via a Tailscale exit-node so scans never expose home infrastructure. | Recon engine · Cloudflare Worker · Tailscale · AWS |
+| **DEEPWIRE** — Recon & attack-surface platform *(Architect · retired 2026)* | Standalone recon engine; security-audited (scope-bypass, CSRF, session revocation, rate-limit); private egress via a Tailscale exit-node so scans never expose home infrastructure. | Recon engine · Cloudflare Worker · Tailscale · AWS |
 | **Security Operations & DFIR** *(Operator)* | End-to-end incident response on a real infostealer (malware analysis, C2 attribution, credential rotation). Operates a Docker monitoring stack (Prometheus, Grafana, Uptime Kuma) with DNS filtering and a T-Pot honeypot. | Ghidra · Tshark · T-Pot · Docker |
 
 ## Selected public work
