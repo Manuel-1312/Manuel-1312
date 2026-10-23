@@ -45,10 +45,10 @@
   </g>
 
   <!-- text: generic sans/mono stacks render on any viewer (no external font fetch) -->
-  <text x="66" y="92" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="14" letter-spacing="3.4" fill="#5E7086">SECURITY ENGINEER</text>
+  <text x="66" y="92" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="14" letter-spacing="3.4" fill="#8494A8">SECURITY ENGINEER</text>
   <text x="66" y="160" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="700" letter-spacing="0.5" fill="url(#name)">Manuel Sánchez Brito</text>
   <rect x="68" y="182" width="430" height="2" fill="url(#rule)"/>
   <text x="66" y="214" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="20" letter-spacing="0.4" fill="#AEBAC9">Full-stack Security Engineer</text>
-  <text x="66" y="250" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="13.5" letter-spacing="2" fill="#6E7D90">CYBERSECURITY · CLOUD · NETWORKS · HARDWARE</text>
-  <text x="66" y="276" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="12.5" letter-spacing="2" fill="#4F5E72">MURCIA · SPAIN · CET · REMOTE-FIRST</text>
+  <text x="66" y="250" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="13.5" letter-spacing="2" fill="#93A1B4">CYBERSECURITY · CLOUD · NETWORKS · HARDWARE</text>
+  <text x="66" y="276" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="12.5" letter-spacing="2" fill="#7C8A9D">MURCIA · SPAIN · CET · REMOTE-FIRST</text>
 </svg>

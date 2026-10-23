@@ -5,8 +5,6 @@
 
 <div align="center">
 
-`I build and ship security products end to end — from hardware and networks to the cloud that runs them.`
-
 <sub>**Full-stack Security Engineer** · Founder [@no-do.dev](https://no-do.dev) · Murcia, Spain (CET) · Remote-first</sub>
 
 </div>
@@ -62,15 +60,14 @@ An electronics technician by training and self-taught in security, with roots in
 - **Electronics & Hardware Workshop** · Havana · 2016–2018 — Hands-on apprenticeship beside senior technicians: board-level repair, chip programming & hardware reverse-engineering — the origin of my firmware work.
 
 **Education** — IT Professional Training, Universidad de las Ciencias Informáticas (UCI), Havana (2021–2023) · Técnico Medio en Electrónica, Havana (2016–2019)
+
 **Languages** — Spanish (native) · French (upper-intermediate) · English (C1)
 
 ## Contact
 
 **Open to remote or hybrid roles** in Detection & Response, Cloud Security, Security Engineering and DevSecOps.
 
-- 💼 **LinkedIn** — [manuel-sanchez-brito](https://www.linkedin.com/in/manuel-sanchez-brito/)
-- ✉️ **Email** — [nodo.automatizacion@gmail.com](mailto:nodo.automatizacion@gmail.com)
-- 🌐 **Web** — [no-do.dev](https://no-do.dev)
-- 📄 **CV** — [Download (PDF)](Manuel-Sanchez-CV.pdf)
-
-<sub>Full-stack security engineer · Murcia, Spain · CET · Remote-first</sub>
+- **LinkedIn** — [manuel-sanchez-brito](https://www.linkedin.com/in/manuel-sanchez-brito/)
+- **Email** — [nodo.automatizacion@gmail.com](mailto:nodo.automatizacion@gmail.com)
+- **Web** — [no-do.dev](https://no-do.dev)
+- **CV** — [Download (PDF)](Manuel-Sanchez-CV.pdf)
