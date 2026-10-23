@@ -18,46 +18,42 @@
 
 ## About
 
-I'm a full-stack security engineer who builds security products end to end — from hardware and networks to the cloud that runs them.
+I build security products end to end, from the hardware and networks up to the cloud that runs them.
 
-I designed, shipped and now **operate two products in production**: **GRIMZ**, a self-hosted penetration-testing platform with live billing and a deny-by-default scope engine, and **TRACEZ**, an OSINT intelligence SaaS on the Cloudflare edge with tamper-evident, Ed25519-signed evidence. I also architected **DEEPWIRE**, a recon platform with private, controlled egress (retired in October 2026).
+Two are in production: **GRIMZ**, a self-hosted penetration-testing platform with live billing and a deny-by-default scope engine, and **TRACEZ**, an OSINT SaaS on the Cloudflare edge with tamper-evident, Ed25519-signed evidence. I also architected **DEEPWIRE**, a recon platform with private egress (retired in October 2026).
 
-Day to day I move across the whole stack: Python scanning engines, strict-TypeScript Cloudflare Workers, Docker-based monitoring (Prometheus / Grafana), DNS filtering, mesh networking, honeypots, and live incident response — including real malware analysis and OSINT attribution after an intrusion.
-
-An electronics technician by training and self-taught in security, with roots in hardware (multilayer PCB / RF) and six years mentored inside real network infrastructure. I care about **zero-trust defaults, verifiable evidence, and fixing the root cause with the smallest possible change.**
+An electronics technician by training, self-taught in security, with six years mentored inside real network infrastructure. I care about **zero-trust defaults, verifiable evidence, and fixing the root cause with the smallest possible change.**
 
 ## What I build
 
-| Project | What it is | Stack |
-|---|---|---|
-| **GRIMZ** — Commercial pentesting platform *(Founder & Lead Engineer)* | Self-hosted pentest product, shipped end to end: license issuer, store, gated downloads and live Stripe billing. Deny-by-default scope engine + kill-switch, PTY-backed terminal, per-target rate limiting, isolated Metasploit lab. | Python · Flask · Stripe |
-| **TRACEZ** — OSINT intelligence SaaS *(Founder & Lead Engineer)* | Production OSINT & graph-intelligence on the Cloudflare edge (Workers, D1, R2, KV, WAF): Google SSO, 2FA, entity merge, Stripe billing. Tamper-evident Ed25519-signed evidence + public verification, AI-assisted entity expansion with human-in-the-loop. Shipped lean: mobile Lighthouse 99, CLS 0 in production. | TypeScript · Cloudflare Workers · D1 · R2 |
-| **DEEPWIRE** — Recon & attack-surface platform *(Architect · retired 2026)* | Standalone recon engine; security-audited (scope-bypass, CSRF, session revocation, rate-limit); private egress via a Tailscale exit-node so scans never expose home infrastructure. | Recon engine · Cloudflare Worker · Tailscale · AWS |
-| **Security Operations & DFIR** *(Operator)* | End-to-end incident response on a real infostealer (malware analysis, C2 attribution, credential rotation). Operates a Docker monitoring stack (Prometheus, Grafana, Uptime Kuma) with DNS filtering and a T-Pot honeypot. | Ghidra · Tshark · T-Pot · Docker |
+| | |
+|---|---|
+| **GRIMZ**<br><sub>Pentesting platform · founder & lead engineer</sub> | Self-hosted product shipped end to end: license issuer, store, gated downloads, live Stripe billing. Deny-by-default scope engine with kill-switch, per-target rate limits, isolated Metasploit lab.<br><sub>Python · Flask · Stripe</sub> |
+| **TRACEZ**<br><sub>OSINT intelligence SaaS · founder & lead engineer</sub> | Graph intelligence on the Cloudflare edge: Google SSO, 2FA, entity merge, Stripe billing. Ed25519-signed evidence with public verification, AI-assisted entity expansion with a human in the loop. Mobile Lighthouse 99, CLS 0 in production.<br><sub>TypeScript · Workers · D1 · R2</sub> |
+| **DEEPWIRE**<br><sub>Recon platform · architect · retired 2026</sub> | Security-audited recon engine (scope bypass, CSRF, session revocation, rate limits). Scans left through a Tailscale exit node, so home infrastructure was never exposed.<br><sub>Cloudflare Worker · Tailscale · AWS</sub> |
+| **Security operations & DFIR**<br><sub>Operator</sub> | Full incident response on a real infostealer: malware analysis, C2 attribution, credential rotation. Runs a Docker monitoring stack (Prometheus, Grafana, Uptime Kuma) with DNS filtering and a T-Pot honeypot.<br><sub>Ghidra · Tshark · T-Pot · Docker</sub> |
 
-## Selected public work
+## Open source
 
-- **[lazyios](https://github.com/Manuel-1312/lazyios)** — Keyboard-driven terminal app for iPhones over USB, no jailbreak: syslog, processes with live CPU/memory/network per app, packet capture with per-app connections, privacy score and tracker detection, anomaly rules. On [PyPI](https://pypi.org/project/lazyios/) plus prebuilt Windows, macOS and Linux binaries with SHA-256 checksums. `Python` · `Textual`
-- **[minimeters-bridge](https://github.com/Manuel-1312/minimeters-bridge)** — Real-time audio metering engine (LUFS R128, FFT spectrum, true peak, correlation) streamed over WebSocket from WASAPI loopback. `TypeScript` · `Python`
-- **[realmeters-spotify](https://github.com/Manuel-1312/realmeters-spotify)** — Mastering-style real-audio visualizer for Spotify (Spicetify custom app): LUFS, spectrum, spectrogram, true peak, stereometer. Published on the Spicetify Marketplace. `TypeScript`
+- **[lazyios](https://github.com/Manuel-1312/lazyios)** — Terminal app for iPhones over USB, no jailbreak: syslog, per-app processes and network, packet capture with per-app connections, privacy score, tracker detection, anomaly rules, and offline session diffs and reports. On [PyPI](https://pypi.org/project/lazyios/) with Windows, macOS and Linux binaries, SHA-256 sums and build attestation. `Python` · `Textual`
+- **[minimeters-bridge](https://github.com/Manuel-1312/minimeters-bridge)** — Real-time audio metering (LUFS R128, FFT, true peak, correlation) streamed over WebSocket from WASAPI loopback. `TypeScript` · `Python`
+- **[realmeters-spotify](https://github.com/Manuel-1312/realmeters-spotify)** — Mastering-style audio visualizer for Spotify, a Spicetify custom app on the Marketplace. `TypeScript`
 - **[personal-dictionary-of-ethical-hacking](https://github.com/Manuel-1312/personal-dictionary-of-ethical-hacking)** — A working reference of ethical-hacking concepts and tooling, with a script launcher and CI. `Python`
 
 ## Skills
 
-**Offensive & DFIR** — Ghidra · Metasploit · Nmap · Masscan · Tshark · T-Pot · malware analysis · incident response · honeypots · OSINT attribution · network traffic analysis · beaconing detection
-
-**Cloud & Edge** — Cloudflare (Workers, Pages, D1, R2, KV, WAF) · Docker · Stripe · AWS Lightsail · Tailscale mesh · DNS · segmentation · controlled egress
-
-**Languages & Crypto** — Python (Flask) · TypeScript (Zod) · Go · C#/.NET (Blazor, EF Core) · Rust (PyO3) · applied cryptography (AES-GCM, HKDF, Ed25519)
-
-**Monitoring** — Prometheus · Grafana · Blackbox · Uptime Kuma · DNS filtering
-
-**Hardware & Firmware** — KiCad · Flux.ai (multilayer PCB for RF) · reverse-engineering · chip programming · board-level repair · ESP32 / ESP-IDF · MT7612U
+| | |
+|---|---|
+| **Offensive & DFIR** | Ghidra · Metasploit · Nmap · Masscan · Tshark · T-Pot · malware analysis · incident response · honeypots · OSINT attribution · network traffic analysis · beaconing detection |
+| **Cloud & edge** | Cloudflare (Workers, Pages, D1, R2, KV, WAF) · Docker · Stripe · AWS Lightsail · Tailscale · DNS · segmentation · controlled egress |
+| **Languages & crypto** | Python (Flask) · TypeScript (Zod) · Go · C#/.NET (Blazor, EF Core) · Rust (PyO3) · AES-GCM · HKDF · Ed25519 |
+| **Monitoring** | Prometheus · Grafana · Blackbox · Uptime Kuma · DNS filtering |
+| **Hardware & firmware** | KiCad · Flux.ai (multilayer RF PCB) · reverse engineering · chip programming · board-level repair · ESP32 / ESP-IDF · MT7612U |
 
 ## Background
 
-- **National Medical Library of Cuba — Infrastructure** · Havana · 2018–2024 — Six years learning network infrastructure under the library's systems administrator: firewalls, public/web services and network administration across Infomed, Cuba's national health network.
-- **Electronics & Hardware Workshop** · Havana · 2016–2018 — Hands-on apprenticeship beside senior technicians: board-level repair, chip programming & hardware reverse-engineering — the origin of my firmware work.
+- **National Medical Library of Cuba · Infrastructure** — Havana, 2018–2024. Six years learning network infrastructure under the library's systems administrator: firewalls, web services and network administration across Infomed, Cuba's national health network.
+- **Electronics & hardware workshop** — Havana, 2016–2018. Hands-on apprenticeship beside senior technicians: board-level repair, chip programming and hardware reverse engineering, the origin of my firmware work.
 
 **Education** — IT Professional Training, Universidad de las Ciencias Informáticas (UCI), Havana (2021–2023) · Técnico Medio en Electrónica, Havana (2016–2019)
 
@@ -67,7 +63,4 @@ An electronics technician by training and self-taught in security, with roots in
 
 **Open to remote or hybrid roles** in Detection & Response, Cloud Security, Security Engineering and DevSecOps.
 
-- **LinkedIn** — [manuel-sanchez-brito](https://www.linkedin.com/in/manuel-sanchez-brito/)
-- **Email** — [nodo.automatizacion@gmail.com](mailto:nodo.automatizacion@gmail.com)
-- **Web** — [no-do.dev](https://no-do.dev)
-- **CV** — [Download (PDF)](Manuel-Sanchez-CV.pdf)
+[LinkedIn](https://www.linkedin.com/in/manuel-sanchez-brito/) · [Email](mailto:nodo.automatizacion@gmail.com) · [no-do.dev](https://no-do.dev) · [CV (PDF)](Manuel-Sanchez-CV.pdf)
