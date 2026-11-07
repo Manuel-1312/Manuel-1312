@@ -20,7 +20,7 @@
 
 I build security products end to end, from the hardware and networks up to the cloud that runs them.
 
-Two are in production: **GRIMZ**, a self-hosted penetration-testing platform with live billing and a deny-by-default scope engine, and **TRACEZ**, an OSINT SaaS on the Cloudflare edge with tamper-evident, Ed25519-signed evidence. I also architected **DEEPWIRE**, a recon platform with private egress (retired in October 2026).
+Two are in production: **GRIMZ**, a self-hosted penetration-testing platform with live billing and a deny-by-default scope engine, and **TRACEZ**, an OSINT and GEOINT SaaS on the Cloudflare edge with Ed25519-signed, RFC 3161-timestamped evidence. I also architected **DEEPWIRE**, a recon platform with private egress (retired in October 2026).
 
 An electronics technician by training, self-taught in security, with six years mentored inside real network infrastructure. I care about **zero-trust defaults, verifiable evidence, and fixing the root cause with the smallest possible change.**
 
@@ -29,7 +29,7 @@ An electronics technician by training, self-taught in security, with six years m
 | | |
 |---|---|
 | **GRIMZ**<br><sub>Pentesting platform · founder & lead engineer</sub> | Self-hosted product shipped end to end: license issuer, store, gated downloads, live Stripe billing. Deny-by-default scope engine with kill-switch, per-target rate limits, isolated Metasploit lab.<br><sub>Python · Flask · Stripe</sub> |
-| **TRACEZ**<br><sub>OSINT intelligence SaaS · founder & lead engineer</sub> | Graph intelligence on the Cloudflare edge: Google SSO, 2FA, entity merge, Stripe billing. Ed25519-signed evidence with public verification, AI-assisted entity expansion with a human in the loop. Mobile Lighthouse 99, CLS 0 in production.<br><sub>TypeScript · Workers · D1 · R2</sub> |
+| **TRACEZ**<br><sub>OSINT intelligence SaaS · founder & lead engineer</sub> | OSINT/GEOINT on the Cloudflare edge: entity graph over 36 sources with human-confirmed AI expansion; live map with aircraft and ship watches (AIS collector on a dedicated EU server), satellite imagery and GNSS integrity; two-stage map Q&A with cited sources and an MCP server. Ed25519-signed, RFC 3161-timestamped evidence with public verification. Google/GitHub SSO, passkeys, 2FA, Stripe billing. Mobile Lighthouse 99, CLS 0.<br><sub>TypeScript · Workers · D1 · R2 · Durable Objects · Node</sub> |
 | **DEEPWIRE**<br><sub>Recon platform · architect · retired 2026</sub> | Security-audited recon engine (scope bypass, CSRF, session revocation, rate limits). Scans left through a Tailscale exit node, so home infrastructure was never exposed.<br><sub>Cloudflare Worker · Tailscale · AWS</sub> |
 | **Security operations & DFIR**<br><sub>Operator</sub> | Full incident response on a real infostealer: malware analysis, C2 attribution, credential rotation. Runs a Docker monitoring stack (Prometheus, Grafana, Uptime Kuma) with DNS filtering and a T-Pot honeypot.<br><sub>Ghidra · Tshark · T-Pot · Docker</sub> |
 
