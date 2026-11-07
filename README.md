@@ -24,14 +24,38 @@ Two are in production: **GRIMZ**, a self-hosted penetration-testing platform wit
 
 An electronics technician by training, self-taught in security, with six years mentored inside real network infrastructure. I care about **zero-trust defaults, verifiable evidence, and fixing the root cause with the smallest possible change.**
 
-## What I build
+## Portfolio
+
+Three kinds of work, kept apart on purpose: products people pay for, open-source tools I maintain, and things I built to learn.
+
+### Commercial products · in production · closed source
 
 | | |
 |---|---|
-| **GRIMZ**<br><sub>Pentesting platform · founder & lead engineer</sub> | Self-hosted product shipped end to end: license issuer, store, gated downloads, live Stripe billing. Deny-by-default scope engine with kill-switch, per-target rate limits, isolated Metasploit lab.<br><sub>Python · Flask · Stripe</sub> |
-| **TRACEZ**<br><sub>OSINT intelligence SaaS · founder & lead engineer</sub> | OSINT/GEOINT on the Cloudflare edge: entity graph over 36 sources with human-confirmed AI expansion; live map with aircraft and ship watches (AIS collector on a dedicated EU server), satellite imagery and GNSS integrity; two-stage map Q&A with cited sources and an MCP server. Ed25519-signed, RFC 3161-timestamped evidence with public verification. Google/GitHub SSO, passkeys, 2FA, Stripe billing. Mobile Lighthouse 99, CLS 0.<br><sub>TypeScript · Workers · D1 · R2 · Durable Objects · Node</sub> |
-| **DEEPWIRE**<br><sub>Recon platform · architect · retired 2026</sub> | Security-audited recon engine (scope bypass, CSRF, session revocation, rate limits). Scans left through a Tailscale exit node, so home infrastructure was never exposed.<br><sub>Cloudflare Worker · Tailscale · AWS</sub> |
-| **Security operations & DFIR**<br><sub>Operator</sub> | Full incident response on a real infostealer: malware analysis, C2 attribution, credential rotation. Runs a Docker monitoring stack (Prometheus, Grafana, Uptime Kuma) with DNS filtering and a T-Pot honeypot.<br><sub>Ghidra · Tshark · T-Pot · Docker</sub> |
+| **[GRIMZ](https://grimz.no-do.dev)**<br><sub>Pentesting platform · founder & lead engineer · 2025–</sub> | Self-hosted product shipped end to end: license issuer, store, gated downloads, live Stripe billing. Deny-by-default scope engine with kill-switch, per-target rate limits, isolated Metasploit lab.<br><sub>Python · Flask · Stripe</sub> |
+| **[TRACEZ](https://tracez.no-do.dev)**<br><sub>OSINT/GEOINT SaaS · founder & lead engineer · 2025–</sub> | Entity graph over 36 sources with human-confirmed AI expansion; live map with aircraft and ship watches (AIS collector on a dedicated EU server), satellite imagery and GNSS integrity; two-stage map Q&A with cited sources and an MCP server. Ed25519-signed, RFC 3161-timestamped evidence with public verification. Google/GitHub SSO, passkeys, 2FA, Stripe billing. Mobile Lighthouse 99, CLS 0.<br><sub>TypeScript · Workers · D1 · R2 · Durable Objects · Node</sub> |
+
+How the critical parts work: **[architecture notes](ARCHITECTURE.md)** (evidence chain, prompt-injection-resistant map Q&A, aircraft and ship watches, licensing and scope control).
+
+### Open source · maintained
+
+| Project | What it is | State |
+|---|---|---|
+| **[lazyios](https://github.com/Manuel-1312/lazyios)** | Terminal app for iPhones over USB, no jailbreak: syslog, per-app processes and network, packet capture with per-app connections, privacy score, tracker detection, anomaly rules, offline session diffs and reports. `Python` · `Textual` | Released on [PyPI](https://pypi.org/project/lazyios/), signed binaries for Windows, macOS and Linux, CI on three OSes |
+| **[minimeters-bridge](https://github.com/Manuel-1312/minimeters-bridge)** | Real-time audio metering (LUFS R128, FFT, true peak, correlation) streamed over WebSocket from WASAPI loopback. `Python` | Companion service for RealMeters |
+| **[realmeters-spotify](https://github.com/Manuel-1312/realmeters-spotify)** | Mastering-style audio visualizer for Spotify, a Spicetify custom app. `TypeScript` | Listed on the Spicetify Marketplace |
+
+### Learning and experiments
+
+| Project | What it is | State |
+|---|---|---|
+| **[personal-dictionary-of-ethical-hacking](https://github.com/Manuel-1312/personal-dictionary-of-ethical-hacking)** | A working reference of ethical-hacking concepts with a script launcher and CI. `Python` | Study notes, not a product |
+| **DEEPWIRE** | Recon platform: security-audited engine (scope bypass, CSRF, session revocation, rate limits); scans left through a Tailscale exit node so home infrastructure was never exposed. `Cloudflare Worker` · `Tailscale` · `AWS` | Retired October 2026 |
+| Older experiments | Early tools from when I was learning. | Archived and left as they were |
+
+### Security operations
+
+Full incident response on a real infostealer infection: malware analysis, C2 attribution, credential rotation. I run a Docker monitoring stack (Prometheus, Grafana, Uptime Kuma) with DNS filtering and a T-Pot honeypot. `Ghidra` · `Tshark` · `T-Pot` · `Docker`
 
 ## Proof
 
@@ -56,14 +80,7 @@ flowchart LR
   V --> S[aisstream.io]
   W --> F[Open sources<br/>adsb.lol · FIRMS · USGS · STAC]
 ```
-<sub>TRACEZ, simplified. Evidence is signed in the Worker and the public key is published, so anyone can verify a report without trusting the server.</sub>
-
-## Open source
-
-- **[lazyios](https://github.com/Manuel-1312/lazyios)** — Terminal app for iPhones over USB, no jailbreak: syslog, per-app processes and network, packet capture with per-app connections, privacy score, tracker detection, anomaly rules, and offline session diffs and reports. On [PyPI](https://pypi.org/project/lazyios/) with Windows, macOS and Linux binaries, SHA-256 sums and build attestation. `Python` · `Textual`
-- **[minimeters-bridge](https://github.com/Manuel-1312/minimeters-bridge)** — Real-time audio metering (LUFS R128, FFT, true peak, correlation) streamed over WebSocket from WASAPI loopback. `TypeScript` · `Python`
-- **[realmeters-spotify](https://github.com/Manuel-1312/realmeters-spotify)** — Mastering-style audio visualizer for Spotify, a Spicetify custom app on the Marketplace. `TypeScript`
-- **[personal-dictionary-of-ethical-hacking](https://github.com/Manuel-1312/personal-dictionary-of-ethical-hacking)** — A working reference of ethical-hacking concepts and tooling, with a script launcher and CI. `Python`
+<sub>TRACEZ, simplified. Evidence is signed in the Worker and the public key is published, so anyone can verify a report without trusting the server. Component-level diagrams: [ARCHITECTURE.md](ARCHITECTURE.md).</sub>
 
 ## Skills
 
@@ -77,8 +94,17 @@ flowchart LR
 
 ## Background
 
-- **National Medical Library of Cuba · Infrastructure** — Havana, 2018–2024. Six years learning network infrastructure under the library's systems administrator: firewalls, web services and network administration across Infomed, Cuba's national health network.
-- **Electronics & hardware workshop** — Havana, 2016–2018. Hands-on apprenticeship beside senior technicians: board-level repair, chip programming and hardware reverse engineering, the origin of my firmware work.
+**National Medical Library of Cuba · infrastructure, mentored** — Havana, 2018–2024
+
+Six years learning network infrastructure on a production network, not in a lab: as the mentee of the library's systems administrator, starting young, inside the daily operation of **Infomed**, Cuba's national health network and one of the oldest and largest in the region.
+
+- **Firewalls and perimeter** of a public institution
+- **Public and web services** of the library
+- **Network administration and day-to-day operations**
+
+**Electronics and hardware workshop · apprenticeship** — Havana, 2016–2018
+
+Hands-on work beside technicians with more than 15 years in the trade: board-level repair, chip programming and hardware reverse engineering. It is the origin of my firmware work (ESP32 / ESP-IDF) and of the RF board design I still do.
 
 **Education** — IT Professional Training, Universidad de las Ciencias Informáticas (UCI), Havana (2021–2023) · Técnico Medio en Electrónica, Havana (2016–2019)
 
