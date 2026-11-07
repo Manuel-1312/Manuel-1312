@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Manuel Sánchez Brito — Full-stack Security Engineer. Cybersecurity, Cloud, Networks, Hardware. Murcia, Spain. Remote-first.">
-  <title>Manuel Sánchez Brito — Full-stack Security Engineer</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Manuel Sánchez Brito — Security Engineer. Builds offensive-security and OSINT/GEOINT products end to end. Murcia, Spain. Remote-first.">
+  <title>Manuel Sánchez Brito — Security Engineer</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0D1117"/>
@@ -48,7 +48,7 @@
   <text x="66" y="92" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="14" letter-spacing="3.4" fill="#8494A8">SECURITY ENGINEER</text>
   <text x="66" y="160" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="700" letter-spacing="0.5" fill="url(#name)">Manuel Sánchez Brito</text>
   <rect x="68" y="182" width="430" height="2" fill="url(#rule)"/>
-  <text x="66" y="214" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="20" letter-spacing="0.4" fill="#AEBAC9">Full-stack Security Engineer</text>
-  <text x="66" y="250" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="13.5" letter-spacing="2" fill="#93A1B4">CYBERSECURITY · CLOUD · NETWORKS · HARDWARE</text>
+  <text x="66" y="214" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="20" letter-spacing="0.4" fill="#AEBAC9">I build security products end to end</text>
+  <text x="66" y="250" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="13.5" letter-spacing="2" fill="#93A1B4">OFFENSIVE SECURITY · OSINT/GEOINT · EDGE CLOUD</text>
   <text x="66" y="276" font-family="'Consolas','SF Mono','DejaVu Sans Mono',monospace" font-size="12.5" letter-spacing="2" fill="#7C8A9D">MURCIA · SPAIN · CET · REMOTE-FIRST</text>
 </svg>
