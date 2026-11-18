@@ -33,7 +33,7 @@ Three kinds of work, kept apart on purpose: products people pay for, open-source
 | | |
 |---|---|
 | **[GRIMZ](https://grimz.no-do.dev)**<br><sub>Pentesting platform · founder & lead engineer · 2025–</sub> | Self-hosted product shipped end to end: license issuer, store, gated downloads, live Stripe billing. Deny-by-default scope engine with kill-switch, per-target rate limits, isolated Metasploit lab.<br><sub>Python · Flask · Stripe</sub> |
-| **[TRACEZ](https://tracez.no-do.dev)**<br><sub>OSINT/GEOINT SaaS · founder & lead engineer · 2025–</sub> | Entity graph over 36 sources with human-confirmed AI expansion; live map with aircraft and ship watches (AIS collector on a dedicated EU server), satellite imagery and GNSS integrity; two-stage map Q&A with cited sources and an MCP server. Ed25519-signed, RFC 3161-timestamped evidence with public verification. Google/GitHub SSO, passkeys, 2FA, Stripe billing. Mobile Lighthouse 99, CLS 0.<br><sub>TypeScript · Workers · D1 · R2 · Durable Objects · Node</sub> |
+| **[TRACEZ](https://tracez.no-do.dev)**<br><sub>OSINT/GEOINT SaaS · founder & lead engineer · 2025–</sub> | Entity graph over 38 sources with human-confirmed AI expansion; live map with aircraft and ship watches (AIS collector on a dedicated EU server), satellite imagery and GNSS integrity; two-stage map Q&A with cited sources and an MCP server. Ed25519-signed, RFC 3161-timestamped evidence with public verification. Google/GitHub SSO, passkeys, 2FA, Stripe billing. Mobile Lighthouse 99, CLS 0.<br><sub>TypeScript · Workers · D1 · R2 · Durable Objects · Node</sub> |
 
 How the critical parts work: **[architecture notes](ARCHITECTURE.md)** (evidence chain, prompt-injection-resistant map Q&A, aircraft and ship watches, licensing and scope control).
 
@@ -44,6 +44,12 @@ How the critical parts work: **[architecture notes](ARCHITECTURE.md)** (evidence
 | **[lazyios](https://github.com/Manuel-1312/lazyios)** | Terminal app for iPhones over USB, no jailbreak: syslog, per-app processes and network, packet capture with per-app connections, privacy score, tracker detection, anomaly rules, offline session diffs and reports. `Python` · `Textual` | Released on [PyPI](https://pypi.org/project/lazyios/), signed binaries for Windows, macOS and Linux, CI on three OSes |
 | **[minimeters-bridge](https://github.com/Manuel-1312/minimeters-bridge)** | Real-time audio metering (LUFS R128, FFT, true peak, correlation) streamed over WebSocket from WASAPI loopback. `Python` | Companion service for RealMeters |
 | **[realmeters-spotify](https://github.com/Manuel-1312/realmeters-spotify)** | Mastering-style audio visualizer for Spotify, a Spicetify custom app. `TypeScript` | Listed on the Spicetify Marketplace |
+
+### Upstream contributions
+
+| Project | Contribution | State |
+|---|---|---|
+| **[projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei/pull/8140)** | `*RawStringSlice.String()` dereferenced a nil receiver, so a template with no `Reference` could panic; added a nil-safe override with a test. `Go` | Merged |
 
 ### Learning and experiments
 
